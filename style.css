@@ -11,7 +11,7 @@ body {
  display: grid;
  grid-template-columns: 1fr 1fr;
  width: 780px;
- height: 550px;
+ height: 590px;
  background: white;
  /* padding: 10px; */
  border-radius: 15px;
@@ -101,7 +101,7 @@ img {
  .card{
   grid-template-columns: 1fr;
   width: 350px;
-  height: 630px;
+  height: 680px;
  }
  .img{
   width: 350px;
