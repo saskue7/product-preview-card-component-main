@@ -1,0 +1,151 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+body {
+ background: rgb(237, 233, 240);
+
+}
+
+.card {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ width: 780px;
+ height: 550px;
+ background: white;
+ /* padding: 10px; */
+ border-radius: 15px;
+ margin: 10% auto;
+ overflow: hidden;
+}
+.img{
+ overflow: hidden;
+ background: rgba(0, 0, 0, 0.2);
+}
+
+img {
+ width: 100%;
+ height: 100%;
+ filter: contrast(1.5);
+ /* background-size: cover;
+ background-size: contain; */
+}
+.content{
+ margin-left: 10px;
+ margin-right: 20px;
+}
+.main{
+ padding: 5px;
+ margin: 20px;
+ font-size: 20px;
+ color: rgb(185, 185, 178);
+}
+.header{
+ line-height: 2.8rem;
+ padding: 5px;
+ margin: 20px;
+ font-size: 50px;
+}
+.text{
+ line-height: 2rem;
+ margin-left: 20px;
+ margin-right: 20px;
+ font-size: 22px;
+ color: grey;
+}
+.price{
+ margin-top: 30px;
+ margin-left: 20px;
+ display: flex;
+ flex-direction: row;
+}
+.price h1{
+ font-size: 40px;
+ color: green;
+}
+.price h2{
+ font-size: 20px;
+ color: rgb(190, 182, 182);
+ margin-left: 30px;
+ margin-top: 12px;
+ text-decoration: line-through;
+}
+.add-bar{
+ margin-top: 20px;
+ margin-left: 20px;
+ background: rgb(2, 56, 2);
+ display: flex;
+ width: 300px;
+ height: 60px;
+ border-radius: 10px;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+.add-bar img{
+ padding:5px;
+ background: rgba(10, 88, 10,0);
+ color: white;
+ width: 20px;
+ height: 20px;
+}
+.add-bar h2{
+ margin-left: 13px;
+ color: white;
+}
+.add-bar:hover{
+ background: green;
+ 
+}
+@media screen and (max-width:600px){
+ .card{
+  grid-template-columns: 1fr;
+  width: 350px;
+  height: 630px;
+ }
+ .img{
+  width: 350px;
+  height: 250px;
+  
+ }
+ .img {
+  background: url("./images/image-product-mobile.jpg") ;
+  background-size: 20px 20px;
+  background-size: cover;
+  background-position: center;
+  
+ }
+ .img img{
+  transform: scaleY(1.6);
+  
+ }
+ .header{
+  font-size: 35px;
+  line-height: 2rem;
+  padding-left: 2px;
+  font-weight: 700;
+  margin-top: 0;
+  
+  padding-right: 0px;
+  margin: 0px;
+  margin-left: 15px;
+ }
+ .text{
+  font-size: 17px;
+  margin-right: 0;
+  margin-top: 15px;
+  line-height: 1.5rem;
+  
+ }
+ .main{
+  margin-top: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+ }
+ .price{
+  margin-top: 18px;
+ } 
+  
+ }
+
+
